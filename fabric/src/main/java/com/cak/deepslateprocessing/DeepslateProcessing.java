@@ -8,9 +8,6 @@ import net.fabricmc.api.ModInitializer;
 
 public class DeepslateProcessing implements ModInitializer {
     
-    public static CreateRegistrate REGISTRATE = CreateRegistrate.create(Constants.MOD_ID)
-		    .setCreativeTab(DPTabs.DEEPSLATE_PROCESSING.key());
-    
     @Override
     public void onInitialize() {
         
@@ -20,11 +17,7 @@ public class DeepslateProcessing implements ModInitializer {
 
         // Use Fabric to bootstrap the Common mod.
         Constants.LOG.info("Hello Fabric world!");
-        DPLang.register();
         CommonClass.init();
-        DPTabs.register();
-        DPRegistry.register();
-        REGISTRATE.register();
     }
     
 }

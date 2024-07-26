@@ -17,5 +17,9 @@ public class CommonClass {
         
         Constants.LOG.info("Hello from common!");
         
+        DPLang.register();
+        DPTabs.register();
+        DPRegistry.register();
+        DPRegistry.REGISTRATE.register();
     }
 }

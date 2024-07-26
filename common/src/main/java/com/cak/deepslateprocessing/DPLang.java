@@ -7,7 +7,7 @@ public class DPLang {
     }
     
     public static void add(String key, String value) {
-        DeepslateProcessing.REGISTRATE.addRawLang(key, value);
+        DPRegistry.REGISTRATE.addRawLang(key, value);
     }
     
 }

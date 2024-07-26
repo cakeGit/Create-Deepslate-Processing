@@ -13,10 +13,9 @@ public class DPData implements DataGeneratorEntrypoint {
     public void onInitializeDataGenerator(FabricDataGenerator gen) {
         Constants.LOG.info("Hello Fabric world!");
         Path resources = Paths.get(System.getProperty(ExistingFileHelper.EXISTING_RESOURCES));
-        // fixme re-enable the existing file helper when porting lib's ResourcePackLoader.createPackForMod is fixed
         ExistingFileHelper helper = new ExistingFileHelper(
             Set.of(resources), Set.of("create"), false, null, null
         );
-        DeepslateProcessing.REGISTRATE.setupDatagen(gen.createPack(), helper);
+        DPRegistry.REGISTRATE.setupDatagen(gen.createPack(), helper);
     }
 }

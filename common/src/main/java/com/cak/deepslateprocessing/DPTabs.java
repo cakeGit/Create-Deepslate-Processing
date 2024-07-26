@@ -1,19 +1,8 @@
 package com.cak.deepslateprocessing;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllCreativeModeTabs;
-import com.simibubi.create.AllItems;
 import com.simibubi.create.Create;
-import com.simibubi.create.content.contraptions.actors.seat.SeatBlock;
-import com.simibubi.create.content.equipment.armor.BacktankUtil;
-import com.simibubi.create.content.equipment.toolbox.ToolboxBlock;
-import com.simibubi.create.content.kinetics.crank.ValveHandleBlock;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.foundation.item.TagDependentIngredientItem;
 import com.simibubi.create.foundation.utility.Components;
-import com.tterrag.registrate.util.entry.BlockEntry;
-import com.tterrag.registrate.util.entry.ItemEntry;
-import com.tterrag.registrate.util.entry.ItemProviderEntry;
 import com.tterrag.registrate.util.entry.RegistryEntry;
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import it.unimi.dsi.fastutil.objects.*;
@@ -34,8 +23,6 @@ import org.apache.commons.lang3.mutable.MutableObject;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
@@ -117,7 +104,7 @@ public class DPTabs {
         
         private List<Item> collectBlocks(Predicate<Item> exclusionPredicate) {
             List<Item> items = new ReferenceArrayList<>();
-            for (RegistryEntry<Block> entry : DeepslateProcessing.REGISTRATE.getAll(Registries.BLOCK)) {
+            for (RegistryEntry<Block> entry : DPRegistry.REGISTRATE.getAll(Registries.BLOCK)) {
                 if (!CreateRegistrate.isInCreativeTab(entry, tabFilter.get().key()))
                     continue;
                 Item item = entry.get()
@@ -133,7 +120,7 @@ public class DPTabs {
         
         private List<Item> collectItems(Predicate<Item> exclusionPredicate) {
             List<Item> items = new ReferenceArrayList<>();
-            for (RegistryEntry<Item> entry : DeepslateProcessing.REGISTRATE.getAll(Registries.ITEM)) {
+            for (RegistryEntry<Item> entry : DPRegistry.REGISTRATE.getAll(Registries.ITEM)) {
                 if (!CreateRegistrate.isInCreativeTab(entry, tabFilter.get().key()))
                     continue;
                 Item item = entry.get();
