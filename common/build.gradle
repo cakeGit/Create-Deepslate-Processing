@@ -3,7 +3,7 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/create-deepslate-processing.accesswidener")
+    accessWidenerPath = file("src/main/resources/create_deepslate_processing.accesswidener")
 }
 
 repositories {
@@ -36,7 +36,6 @@ sourceSets.main {
         exclude("assets/create/**")
     }
 }
-
 
 publishing {
     publications {

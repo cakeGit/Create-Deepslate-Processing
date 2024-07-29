@@ -1,0 +1,9 @@
+// 1.20.1	2024-07-28T13:27:38.9629444	Create: Deepslate Processing/Registrate Provider for create_deepslate_processing [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+bb63dc56f39b25dbe57b9579588adaabc06b4567 assets\create_deepslate_processing\blockstates\deep_gravel.json
+791488cb8547ac3d743e691c1748a80087176673 assets\create_deepslate_processing\models\item\deepslate_shard.json
+c1e7bc560568416f4930e93054fd1e36ad6fe5a7 data\create_deepslate_processing\loot_tables\blocks\deep_gravel.json
+bfe0a40f3571441646df0ad26bdd2ab470548729 assets\create_deepslate_processing\lang\en_us.json
+e7f05beb64031c21931f548fc746265c5ef4cd02 data\minecraft\tags\blocks\mineable\shovel.json
+d49d7bbf383301e0ffbebcb50ad754fd9757c241 assets\create_deepslate_processing\models\block\deep_gravel.json
+260e2fe0b2bddf1af0b6cec98366f856a1bd205f assets\create_deepslate_processing\lang\en_ud.json
+030d5871bef7d20eade7b2ebf1db76122a788e2d assets\create_deepslate_processing\models\item\deep_gravel.json
