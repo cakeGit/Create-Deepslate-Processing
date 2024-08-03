@@ -1,0 +1,3 @@
+Changes
+- Fixed fabric crash issue, thanks to Github user bangetto for reporting!
+- Fixed fabric icon not working
